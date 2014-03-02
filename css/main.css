@@ -10,17 +10,25 @@ body {
 h1 {
   font-size: 2em;
   color: #FF9999;
-  margin: 0,5em;
+  margin: 0.5em ;
 }
 a {
   text-decoration: none;
-}/*
+}
+.wrapper {
+   width: 90%;
+   margin: 0 auto;
+   /*border: 5px solid green;*/
+   position: relative;
+}
+.wrapper p {
+  margin: 1em;
+}
+/*
 li {
   float: left;
   border: 1px solid yellow; 
 }*/
-
-
 
 /* header */
 .nav ul {
@@ -45,21 +53,42 @@ li {
   margin: 0 auto;
   display: block;
 }
+
+
+/*products*/
+
 #lamparas img {
-  margin: 1em;
+  margin: 0 0.5em 0 0.5em;
   display: inline-block;
 }
 .viajeras {
-  margin: 0 auto;
+  margin: 1em auto;
   display: block;
 }
-.morrales {
-  margin: 0,5em;
-  display: inline-block;
+#morrales img {
+  margin: 0 0.5em 0 0.5em;
+  float: left;
 }
 .zucara {
   margin: 3em;
   display: inline-block;
+}
+.bags {
+  margin: 0 auto;
+  display: inline-block;
+}
+.sobre-mi img {
+  float: right;
+
+}
+
+/*footer*/
+footer {
+  width:relative;
+  height: 160px;
+  padding: 10px;
+  font-size: 1em;
+  margin: 2em;
 }
 
 
