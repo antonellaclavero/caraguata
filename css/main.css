@@ -2,12 +2,12 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
 body {
-  font-family: 'Shadows Into Light Two', cursive;
-}
+  font-family: 'Asap', sans-serif;
+  }
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #33FFCC;
-  margin: 0.5em;
+  margin: 0.5em 0;
 }
 a {
   text-decoration: none;
@@ -15,25 +15,34 @@ a {
 .wrapper {
   width: 90%;
   margin: 0 auto;
+  clear: both;
 }
 .wrapper p {
-  margin: 1em;
+  margin: 1em 0;
 }
 .hidden {
   display: none;
 }
 
 /* header */
+header.main {
+  margin: 3em auto;
+  overflow: auto;
+}
+.navigation {
+  background: red;
+}
 .logo {
   margin: 0 auto;
-  display: block;
+  background: yellow;
+  float: left;
 }
 .nav ul {
-  text-align: center;
+  text-align: right;
+  float: right;
 }
 .nav li {
-  text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.5em;
   display: inline-block;
 }
 .nav a {
@@ -42,7 +51,7 @@ a {
   color: #FF6666;
 }
 .nav a:hover {
-  background: #FF9966;
+  color: #FF9966;
 }
 
 /*products*/
@@ -62,6 +71,17 @@ a {
   height: 6em;
 }
 
+/*sobre caraguata*/
+
+#sobre-caraguata {
+  padding-top: 2em;
+  clear: both;
+  margin: 0.5em;
+}
+#sobre-caraguata p {
+  margin: 0.8em 0;
+}
+
 /*footer*/
 
 footer {
@@ -69,6 +89,31 @@ footer {
   padding: 10px;
   font-size: 1em;
   margin: 2em;
+}
+.contact {
+  text-align: center;
+}
+.contact li {
+  display: inline-block;
+}
+.contact a {
+  background: url("../images/result.png");
+  width: 100px;
+  height: 100px;
+  display: block;
+  opacity: 0.8;
+}
+.contact a:hover {
+  opacity: 1;
+}
+.contact a span {
+  display: none;
+}
+.contact a.facebook {
+  background-position: 0px 0px;
+}
+.contact a.e-mail {
+  background-position: 0px 101px;
 }
 
 /*media queries*/
@@ -85,34 +130,3 @@ footer {
     float: none;
   }
 }
-
-/*footer*/
-
-.contact {
-  padding: 0;
-  text-align: center;
-}
-.contact li {
-  list-style: none;
-  display: inline-block;
-}
-.contact li:after {
-  content: "|";
-  color: blue;
-  padding: 0 1em;
-}
-.contact li.last:after {
-  display: none;
-}
-
-/*
-TODO:
-footer
-link de navegacion--->revisar sobre-cara
-pelar debugging --->ok
-arreglar logo---->ok
-recortar las imagen de la tote bag 1 para que tengan la misma proporcion-->ok
-;
-
-*/
-
